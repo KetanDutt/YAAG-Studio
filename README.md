@@ -1,6 +1,10 @@
 # YAAG Studio
 
-A self-contained, offline-first **Year-at-a-Glance calendar builder**. Customize a printable year calendar, preview it on screen, then print it or save it as PDF through your browser. No installation, account, network connection, or third-party libraries are required.
+A self-contained, offline-first **Year-at-a-Glance calendar builder**. Customize a printable year calendar, preview it on screen, then print it or save it as PDF/PNG through your browser. No installation, account, network connection, or third-party libraries are required.
+
+## Preview
+
+![YAAG Calendar 2027](docs/screenshots/yaag-calendar-2027.png)
 
 ## Quick start
 
@@ -22,6 +26,7 @@ For easier sharing, the print preview also works when the single HTML file is op
 - **3 × 4**, **2 × 6**, **6 × 2** — alternate month-grid proportions.
 - **12 × 1** and **1 × 12** — ultra-compact single-row or single-column month overviews.
 - **Annual wall matrix** — reference-inspired calendar: 12 month rows, dates 1–31 across, weekday abbreviations in each valid date cell, and open space for notes. A2 landscape or larger is recommended for legibility.
+- **Yearly agenda** — minimalist `JAN`–`DEC` rows × 31 open ruled cells for handwriting.
 - For month-grid layouts, choose **row-by-row** or **column-by-column** reading order.
 
 ## Design direction
@@ -30,7 +35,7 @@ YAAG Studio is styled as a quiet print studio with a restrained Liquid Glass mat
 
 ## Customization
 
-Calendar year (1900–2100), language, week start, paper size (A2/A3/A4/Letter/Tabloid), orientation, month style, typeface, palette and custom accent, paper tone, page margins, grid weight, date-number size, title/subtitle/footer, weekend tint, week numbers, neighboring dates, notes line, and event annotations. A dark-mode toggle changes the builder interface, not the printable page.
+Calendar year (1900–2100), language, week start, paper size (`A0`, `A1`, `A2`, `A3`, `A4`, `B1`, `B2`, `ArchE`, `ArchD`, `Tabloid`, `Legal`, `Letter`), orientation, month style, typeface, palette and custom accent, paper tone, page margins, grid weight, date-number size, title/kicker/subtitle/footer, weekend tint, week numbers, neighboring dates, notes line, country holiday & festival packs (India 2027, US, GB, CA, AU), quick-add custom events, Google Calendar OAuth sync, and **Download PNG** / **Print / PDF** export. System `prefers-color-scheme` dark/light mode is detected automatically.
 
 Settings auto-save in the current browser. **Export setup** and **Import** create portable JSON settings files. Import files are limited to 100 KB. Event annotations are limited to 3,000 characters and 50 valid dates; only the first three labels for a given day are shown.
 
@@ -79,3 +84,11 @@ The checker validates HTML parsing, duplicate IDs, required controls/features, e
 - Accent text is darkened as needed for contrast, but custom palette fills and actual printer output are not a formal accessibility certification; proof the chosen palette on your stock.
 
 See `docs/KNOWN_LIMITATIONS.md` for the full list and `docs/RELEASE.md` for release guidance.
+
+## License
+
+Copyright (c) 2026 Ketan Dutt — **All Rights Reserved**.
+
+This repository and its contents are provided for viewing and evaluation purposes only. Commercial use, redistribution, modification, and AI/ML training or fine-tuning are prohibited without explicit written permission from the author (`ketan6196@gmail.com`). See [LICENSE](LICENSE) for full terms.
+
+Design philosophy adapted from [Unslop](https://github.com/heydamir/unslop) by Damir Sokolovsky (@heydamir), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
